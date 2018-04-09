@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Countries\Create;
 use Illuminate\Http\Request;
 
 class CountriesController extends Controller
@@ -27,14 +28,11 @@ class CountriesController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param Create $request
      */
-    public function store(Request $request)
+    public function store(Create $request)
     {
-        //
+
     }
 
     /**

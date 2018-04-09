@@ -50,6 +50,6 @@ class RegisterTest extends TestCase
             ->withHeader('accept', 'application/json')
             ->post('/api/auth/register', $user)
             ->assertStatus(200)
-            ->assertJson(['token']);
+            ->assertJsonStructure(['token', 'user']);
     }
 }
